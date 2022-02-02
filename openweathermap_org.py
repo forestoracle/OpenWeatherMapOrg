@@ -3,7 +3,7 @@ API получения прогноза погоды с сайта openweatherma
 
     Account:   forest.oracle
       EMail:   forest.oracle@gmail.com
-    API Key:   8e9b3d3c89bc21f854d16d22f45d8b65
+    API Key:   
     
     Санкт-Петербург ID = 498817
     Первомайск ID = 511002
@@ -11,13 +11,13 @@ API получения прогноза погоды с сайта openweatherma
     Примеры запросов:
 
       Запрос текущей погоды для Ленинграда в метрической системе.
-        http://api.openweathermap.org/data/2.5/weather?id=498817&APPID=8e9b3d3c89bc21f854d16d22f45d8b65&units=metric
+        http://api.openweathermap.org/data/2.5/weather?id=498817&APPID=------&units=metric
       
       Запрос текущей погоды для Ленинграда в метрической системе на русском языке.
-        http://api.openweathermap.org/data/2.5/weather?id=498817&APPID=8e9b3d3c89bc21f854d16d22f45d8b65&units=metric&lang=ru
+        http://api.openweathermap.org/data/2.5/weather?id=498817&APPID=------&units=metric&lang=ru
       
       Запрос погоды на 2 дня для Ленинграда в метрической системе на русском языке
-        http://api.openweathermap.org/data/2.5/onecall?lon=30.26&lat=59.89&APPID=8e9b3d3c89bc21f854d16d22f45d8b65&units=metric&lang=ru
+        http://api.openweathermap.org/data/2.5/onecall?lon=30.26&lat=59.89&APPID=------&units=metric&lang=ru
             
 """
 import json
@@ -51,7 +51,7 @@ class OpenWeatherMapOrg:
 
 url = 'http://api.openweathermap.org/data/2.5/weather'
 values = {'id': '498817',
-          'APPID': '8e9b3d3c89bc21f854d16d22f45d8b65',
+          'APPID': '------',
           'units': 'metric',
           'lang': 'en',
           'mode': 'json'}
